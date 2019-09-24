@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class = "row" id="header">
+            <div class = "col-3">
+                <h1>CrystalsCollector!</h1>
+            </div>
+        </div>
+        <div class="row" id="instructions">
+            <div class = col-12>
+                <p>You will be given a random number at the start of the game.
+                    <br>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                    <br>
+                    You win the game by matching your total sore to random number, you lose the game if your total score goes above the random number.
+                    <br>
+                    The value of each crystal is hidden from you until you click on it.
+                    <br>
+                    Each time when the game starts, the game will chamge the values of each crystal.
+                </p>
+            </div>
+        </div>
+        <div class = "row" id = "wscore">
+            <div class = "col-4" id="gameScore">
+                <p></p>
+            </div>
+            <div class = "col-2" id="winScore">
+                <p>Wins: </p>
+            </div>
+        </div>
+        <div class = "row" id= "lscore">
+            <div class = "col-4" id="gameScore"></div>
+            <div class = "col-2" id="lossScore">
+                <p>Losses: </p>
+            </div>
+        </div>   
+        <div class = "row" id="images">
+            <div class = "col-2">
+                <input type="image" class="button" id="crystal1" src="../assets/images/crystal1.jpg"></input>
+            </div>
+            <div class = "col-2">
+                <input type="image" class="button" id="crystal2" src="../assets/images/crystal2.jpg"></input>
+            </div>
+            <div class = "col-2">
+                <input type="image" class="button" id="crystal3" src="../assets/images/crystal3.png"></input>
+            </div>
+            <div class = "col-2">
+                <input type="image" class="button" id="crystal4" src="../assets/images/crystal4.jpg"></input>
+            </div>
+        </div>
+        <div class = "row" id = "totalScoreText">
+            <div class = "col-4">
+                <p>Your total score is:</p>
+            </div>
+        </div>    
+        <div class = "row" id = "totalScore">
+                <div class = "col-4">
+                    <p></p>
+                </div>
+        </div> 
+    </div>
+    <script src="../assets/javascript/game.js"></script>
+</body>
+</html>
