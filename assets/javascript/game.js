@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
 
 //variables
 var winCount=0;
@@ -15,15 +15,16 @@ $("#lossScore").text("Losses: " + lossCount);
 $("#gameScore").text(gameNumber);
 $("#totalScore").text(userScore);
 console.log(gameScore);
-    console.log(crystal1);
-    console.log(crystal2);
-    console.log(crystal3);
-    console.log(crystal4);
+console.log(crystal1);
+console.log(crystal2);
+console.log(crystal3);
+console.log(crystal4);
 
 //winning game function
 var gameWin = function(){
     winCount++;
     $("#winScore").text("Wins: " + winCount);
+    alert("You Win!")
     reset();
 }
 
@@ -31,6 +32,7 @@ var gameWin = function(){
 var gameLoss = function(){
     lossCount++;
     $("#lossScore").text("Losses: " + lossCount);
+    alert("You Lose!")
     reset();
 }
 
@@ -38,7 +40,7 @@ var gameLoss = function(){
 $("#crystal1").click(function(){
 userScore = userScore + crystal1;
 $("#totalScore").text(userScore);
-    if(userScore===gameNumber){
+    if(userScore === gameNumber){
         gameWin();
     }
     else if(userScore>gameNumber){
@@ -60,7 +62,7 @@ $("#crystal2").click(function(){
 $("#crystal3").click(function(){
     userScore = userScore + crystal3;
     $("#totalScore").text(userScore);
-        if(userScore===gameNumber){
+        if(userScore === gameNumber){
             gameWin();
         }
         else if(userScore>gameNumber){
@@ -71,7 +73,7 @@ $("#crystal3").click(function(){
 $("#crystal4").click(function(){
     userScore = userScore + crystal4;
     $("#totalScore").text(userScore);
-        if(userScore===gameNumber){
+        if(userScore === gameNumber){
             gameWin();
         }
         else if(userScore>gameNumber){
@@ -81,7 +83,7 @@ $("#crystal4").click(function(){
 
 var reset = function(){
     userScore=0;
-    var gameNumber=Math.floor(Math.random()*120)+19;
+    gameNumber=Math.floor(Math.random()*120)+19;
     crystal1=Math.floor(Math.random()*12)+1;
     crystal2=Math.floor(Math.random()*12)+1;
     crystal3=Math.floor(Math.random()*12)+1;
@@ -95,5 +97,3 @@ var reset = function(){
     console.log(crystal3);
     console.log(crystal4);
 };
-
-});

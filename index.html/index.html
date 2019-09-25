@@ -7,17 +7,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
 
 </head>
 <body>
     <div class="container">
-        <div class = "row" id="header">
-            <div class = "col-3">
+        <div class = "row" >
+            <div class = "col-4" id="header">
                 <h1>CrystalsCollector!</h1>
             </div>
         </div>
-        <div class="row" id="instructions">
-            <div class = col-12>
+        <div class="row">
+            <div class = "col-9" id="instructions">
                 <p>You will be given a random number at the start of the game.
                     <br>
                     There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
@@ -30,7 +31,7 @@
                 </p>
             </div>
         </div>
-        <div class = "row" id = "wscore">
+        <div class = "row" id = "score">
             <div class = "col-4" id="gameScore">
                 <p></p>
             </div>
@@ -38,7 +39,7 @@
                 <p>Wins: </p>
             </div>
         </div>
-        <div class = "row" id= "lscore">
+        <div class = "row" id= "score">
             <div class = "col-4" id="gameScore"></div>
             <div class = "col-2" id="lossScore">
                 <p>Losses: </p>
@@ -59,7 +60,7 @@
             </div>
         </div>
         <div class = "row" id = "totalScoreText">
-            <div class = "col-4">
+            <div class = "col-8">
                 <p>Your total score is:</p>
             </div>
         </div>    
